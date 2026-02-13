@@ -8,3 +8,6 @@ if ( ! command -v zsh &> /dev/null ); then
   sudo dnf install zsh -y
   sudo chsh -s $(which zsh) $USER
 fi
+
+sudo rm -rf ~/.zshrc
+sudo ln -s ~/config/zsh/.zshrc ~/.zshrc
