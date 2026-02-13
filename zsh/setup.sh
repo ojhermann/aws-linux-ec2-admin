@@ -6,5 +6,5 @@ fi
 if ( ! command -v zsh &> /dev/null ); then
   sudo dnf update -y
   sudo dnf install zsh -y
-  sudo chsh -s $(which zsh)
+  sudo chsh -s $(which zsh) $USER
 fi
