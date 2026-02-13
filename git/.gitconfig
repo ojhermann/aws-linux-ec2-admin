@@ -1,0 +1,13 @@
+[init]
+  defaultBranch = main
+
+[user]
+  name = Otto Hermann
+  email = ojhermann@gmail.com
+
+[pull]
+  ff = only
+
+[push]
+  autoSetupRemote = true
+
