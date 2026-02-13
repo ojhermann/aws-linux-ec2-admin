@@ -11,7 +11,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# ssh agent stuff
 if ! pgrep -f "ssh-agent" > /dev/null; then
     eval "$(ssh-agent -s)"
 fi
 ssh-add ~/.ssh/github
+
+PS1="%F{cyan}%d %# %f"
